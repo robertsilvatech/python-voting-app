@@ -7,6 +7,12 @@ services:
       - "6379:6379"
     networks:
       - voting
+  voting_app:
+    image: robertsilvatech/py-voting-app
+    ports:
+      - "8000:8000"
+    networks:
+      - voting
 
 networks:
    voting:
