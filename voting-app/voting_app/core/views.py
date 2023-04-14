@@ -20,7 +20,6 @@ def voting(request):
         form = VotingForm(request.POST or None)
         if form.is_valid():
             for option in dict(OPTIONS_VOTING).keys():
-                temp_dict = {}
                 option_vote = dict(request.POST.lists()).get(option)
                 if option_vote:
                     value = option_vote[0]
