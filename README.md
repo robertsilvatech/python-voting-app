@@ -18,3 +18,7 @@ Essa arquitetura tem como objetivo validar todos os conhecimentos do aluno:
 > Lembre-se: deve haver comunicação entre os componentes para a aplicação funcionar.
 
 ![](img/arquitetura-python-voting-app.png)
+
+- voting-app foi desenvolvido em Django e coleta os votos;
+- redis armazena em cache os votos;
+- result-app foi desenvolvido em Flask e exibe o resultado dos votos;
