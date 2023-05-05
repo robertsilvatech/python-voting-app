@@ -8,7 +8,6 @@ RUN apt update && \
 RUN pip install -U pip && pip install pyicu && \
     pip uninstall -y distro-info && \
     pip install -r requirements.txt 
-    
 
 WORKDIR /app
 COPY --chmod=777 docker-entrypoint.sh docker-entrypoint.sh
